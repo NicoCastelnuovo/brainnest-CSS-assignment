@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'RobotoThin';
+    src: url(fonts/Roboto-Thin.ttf) format('truetype');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'RobotoLight';
+    src: url(fonts/Roboto-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'RobotoLightItalic';
+    src: url(fonts/Roboto-LightItalic.ttf) format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url(fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url(fonts/Roboto-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'RobotoExtraBold';
+    src: url(fonts/Roboto-Black.ttf) format('truetype');
+    font-weight: 900;
+}
+
+
+:root {
+    /* hero footer background, 
+    header information section - 36px extra bold, 
+    text quote section - 36 light italic */
+    --dark-blue: #1f2937;
+    /* hero main text - 48px extra bold
+    hero logo 24px bold or extra */
+    --white: #f9faf8;
+    /* hero secondary text and link - 18px
+    quote background */
+    --grey: #e5e7eb; 
+    /* Button and call to action */
+    --blue: #3882f6;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 18px;
+    color: var(--dark-blue);
+}
+section {
+    padding: 0 15%;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: var(--dark-blue);
+}
+nav > header {
+    color: var(--white);
+    font-size: 24px;
+    font-family: 'RobotoExtraBold', sans-serif;
+    flex-grow: 1;
+}
+nav > ul {
+    list-style-type: none;
+    color: var(--grey);
+    display: flex;
+}
+
+
+/* Hero section */
+.hero {
+    background-color: var(--dark-blue);
+    color: var(--grey);
+    display: flex;
+    font-family: 'RobotoLight', sans-serif;
+    padding: 120px 15%;
+}
+.hero > div {
+    flex: 1 1 400px;
+}
+.hero h1 {
+    color: var(--white);
+    font-size: 48px;
+    font-family: 'RobotoExtraBold', sans-serif;
+}
+button {
+    background-color: var(--blue);
+    color: var(--grey);
+    font-size: 18px;
+    font-family: 'RobotoMedium', sans-serif;
+    border: none;
+    border-radius: 9px;
+    padding: 3px 30px;
+}
+.hero > figure {
+    flex: 1 1 400px;
+    width: 400px;
+    height: 200px;
+    background-color: var(--grey);
+}
+
+
+/* Info section */
+.info {
+    font-family: 'RobotoExtraBold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info > ul {
+    list-style-type: none;
+    display: flex;
+}
+.info-img {
+    width: 100px;
+    height: 100px;
+    background-color: var(--grey);
+    border: 2px solid var(--blue);
+    border-radius: 9px;;
+}
+
+
+/* Quote */
+.quote {
+    background-color: var(--grey);
+}
+
+
+/* signup section */
+.signup {
+    display: flex;
+    flex-direction: ;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: 'RobotoRegular', sans-serif;
+}
+.signup > div {
+
+}
+section p {
+    font-family: 'RobotoLight', sans-serif;
+}
+section button {
+    border: 2px solid var(--grey);
+}
+
+
+/* footer */
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
