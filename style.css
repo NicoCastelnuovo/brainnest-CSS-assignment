@@ -36,77 +36,25 @@
 }
 
 
-:root {
-    /* hero footer background, 
-    header information section - 36px extra bold, 
-    text quote section - 36 light italic */
-    --dark-blue: #1f2937;
-    /* hero main text - 48px extra bold
-    hero logo 24px bold or extra */
-    --white: #f9faf8;
-    /* hero secondary text and link - 18px
-    quote background */
-    --grey: #e5e7eb; 
-    /* Button and call to action */
-    --blue: #3882f6;
-}
-
-
-/* Typography weight */
-.extra-bold {
-    font-family: 'RobotoExtraBold', sans-serif;
-}
-.bold {
-    font-family: 'RobotoBold', sans-serif;
-}
-.medium {
-    font-family: 'RobotoMedium', sans-serif;
-}
-.light {
-    font-family: 'RobotoLight', sans-serif;
-}
-.thin {
-    font-family: 'RobotoThin', sans-serif;
-}
-
-
-/* Typography size */ 
-.big {
-    font-size: 48px;
-}
-.med-big {
-    font-size: 36px;
-}
-.med {
-    font-size: 24px;
-}
-.lit-med {
-    font-size: 18px;
-}
-.lit {
-    font-size: 15px;
-}
-
-
 /* General styles */
+:root {
+    --dark-blue: #1f2937;
+    --blue: #3882f6;
+    --white: #f9faf8;
+    --grey: #e5e7eb; 
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: 'RobotoRegular', sans-serif;
-    font-size: 18px;
-    color: var(--dark-blue);
 }
 section {
     padding: 0 15%;
 }
 ul {
     list-style-type: none;
-}
-a {
-    text-decoration: none;
 }
 button {
     font-family: 'RobotoMedium', sans-serif;
@@ -118,20 +66,15 @@ button {
     margin: 12px 0;
     cursor: pointer;
 }
-section p {
-    font-family: 'RobotoLight', sans-serif;
-    font-size: 15px;
-}
-figure {
-    background-color: var(--grey);
-    flex: 1 1 400px;
-    width: 400px;
-    height: 200px;
-}
-.flex {
+/* .flex {
     display: flex;
-    align-items: center;
 }
+.row {
+    flex-direction: row;
+}
+.col {
+    flex-direction: column;
+} */
 .border-radius {
     border-radius: 9px;
 }
@@ -140,15 +83,59 @@ figure {
 }
 
 
+
+/* Typography styles */
+h1 {
+    font-family: 'RobotoExtraBold', sans-serif;
+    color: var(--white);
+    font-size: 48px;
+}
+h2 {
+    font-family: 'RobotoExtraBold', sans-serif;
+    font-size: 36px;
+    color: var(--dark-blue);
+}
+h3 {
+    font-family: 'RobotoBold', sans-serif;
+    font-size: 24px;
+    color: var(--white);
+}
+a {
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 18px;
+    color: var(--grey);
+    text-decoration: none;
+}
+p, form {
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 18px;
+    color: var(--white);
+    margin: 3px 0;
+}
+figcaption {
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: var(--dark-blue);
+    margin: 3px 0;  
+}
+
+
 /* Navbar */
 .navbar {
     background-color: var(--dark-blue);
     color: var(--grey);
+    display: flex;
     align-items: baseline;
     padding: 12px 15%;
+    position: fixed;
+    width: 100%;
 }
 .navbar > header {
     flex-grow: 1;
+}
+.navbar > ul {
+    display: flex;
 }
 .logo {
     color: var(--white);
@@ -161,54 +148,71 @@ figure {
 
 /* Hero section */
 .hero-section {
+    display: flex;
     background-color: var(--dark-blue);
     color: var(--grey);
-    gap: 24px;
     padding: 120px 15%;
+    gap: 24px;
 }
 .hero-section > div {
     flex: 1 1 400px;
 }
-.main-heading {
+.hero-heading {
     color: var(--white);
+}
+.hero-image {
+    width: 400px;
+    flex: 1 1 400px;
 }
 
 
 /* Info section */
 .info-section {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     padding: 0 15% 120px 15%;
 }
 .info-heading {
-    padding: 60px 0;
+    padding: 42px 0;
+}
+.info-list {
+    display: flex;
+    gap: 36px;
+}
+.info-card {
+    width: 150px;
+    height: 150px;
 }
 .info-img {
     background-color: var(--grey);
     border: 2px solid var(--blue);
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 
 /* Quote */
 .quote-section {
     font-family: 'RobotoLightItalic', sans-serif;
+    font-size: 36px;
     background-color: var(--grey);
     padding: 120px 25%;
 }
 
 
 /* Signup section */
-.signup-section {
+.form-section {
     color: var(--white);
     padding: 90px 15%;
 }
-.signup-card {
+.form-card {
+    display: flex;
     background-color: var(--blue);
     padding: 45px 90px;
+
 }
-.signup-card > div {
+.form-card > div {
     flex-grow: 1;
 }
 
@@ -223,7 +227,10 @@ footer {
 }
 
 
-/* CONSTACTS PAGE */
-form {
-
+/* CONTACTS PAGE */
+.contacts-page {
+    flex-direction: column;
+}
+.contacts-subtitle {
+    color: var(--dark-blue);
 }

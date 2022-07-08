@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar flex padding">
+  <nav class="navbar">
     <header>
-      <a class="logo extra-bold med">Header Logo</a>
+      <h3>Header Logo</h3>
     </header>
-    <ul class="flex">
+    <ul>
+      <li><a class="navbar-link light" href="#">Home</a></li>
       <li><a class="navbar-link light" href="/pages/products.html">Products</a></li>
-      <li><a class="navbar-link light" href="/pages/about.html">About</a></li>
       <li><a class="navbar-link light" href="/pages/contacts.html">Contacts</a></li>
     </ul>
   </nav>
@@ -22,75 +22,78 @@
   <main>
     <div id="wrapper">
 
-      <section class="hero-section flex light">
+      <section class="hero-section">
         <div>
           <header>
-            <h1 class="main-heading extra-bold big">This website is awesome</h1>
+            <h1 class="hero-heading"><strong>Comfort</strong><br>not only a dream</h1>
           </header>
           <p>
-            This website has some subtext, little and with low contrast.
-            Other place for text here, to make it bigger. Bye!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempora 
+            ipsum distinctio voluptatum est illo atque ipsa soluta inventore incidunt 
+            minus ducimus, ullam ea et praesentium, consequuntur deserunt sunt commodi.
           </p>
-          <button class="border-radius">Sign up</button>
+          <a href="/pages/contacts.html">
+            <button class="border-radius">Sign up</button>
+          </a>
         </div>
-        <figure class="hero-figure">
-          <img class="hero-image">
+        <figure>
+          <img class="hero-image" src="./images/hero-image.jpg" alt="A toilet with a blue wall">
         </figure>
       </section>
 
-      <section class="info-section flex">
+      <section class="info-section">
         <header>
-          <h2 class="info-heading extra-bold med-big">Some random information.</h2>
+          <h2 class="info-heading">Let's begin your travel</h2>
         </header>
-        <ul class="flex lit">
-          <li>
+        <ul class="info-list">
+          <li class="info-card">
             <figure class="info-figure">
               <img class="info-img border-radius">
-              <figcaption>This is a caption to understand the size</figcaption>
+              <figcaption>Lorem ipsum dolor sit amet.</figcaption>
             </figure>
           </li>
-          <li>
+          <li class="info-card">
             <figure class="info-figure">
               <img class="info-img border-radius">
-              <figcaption>This is a caption to understand the size</figcaption>
+              <figcaption>Lorem ipsum dolor sit amet.</figcaption>
             </figure>
           </li>
-          <li>
+          <li class="info-card">
             <figure class="info-figure">
               <img class="info-img border-radius">
-              <figcaption>This is a caption to understand the size</figcaption>
+              <figcaption>Lorem ipsum dolor sit amet.</figcaption>
             </figure>
           </li>
-          <li>
+          <li class="info-card">
             <figure class="info-figure">
               <img class="info-img border-radius">
-              <figcaption>This is a caption to understand the size</figcaption>
+              <figcaption>Lorem ipsum dolor sit amet.</figcaption>
             </figure>
           </li>
         </ul>
       </section>
 
-      <section class="quote-section med-big">
+      <section class="quote-section">
         <figure>
           <blockquote>
-            'The sky is bigger than you expect; I have to do a bigger quote 
-            to understand how much size and how much space it occupies. This will
-            be obviously replced by content'
+            'When there are so many challenges and there is no solution, 
+            go to your toilet, put your heads down and you will surely get some solution.'
           </blockquote>
           <figcaption>
-            Nico Castel, 
-            <cite>His life</cite>
+            Anonymus, <cite>The lost books</cite>
           </figcaption>
         </figure>
       </section>
 
-      <section class="signup-section light lit">
-        <div class="signup-card flex border-radius">
+      <section class="form-section light lit">
+        <div class="form-card border-radius">
           <div>
-            <h3>Call to action! It's time!</h3>
-            <p>Sign up for our product bla bla blac</p>
+            <h3>It's time to <del> get up </del> sit down and fight!</h3>
+            <p>Sign up for our product by clicking that button right over there</p>
           </div>
-          <button class="button border border-radius">Sign up</button>
+          <a href="/pages/contacts.html">
+            <button class="border border-radius">Sign up</button>
+          </a>
         </div>
       </section>
 

@@ -13,8 +13,8 @@
       <a class="logo extra-bold med" href="../index.html">Header Logo</a>
     </header>
     <ul class="flex">
+      <li><a class="navbar-link light" href="../index.html">Home</a></li>
       <li><a class="navbar-link light" href="/pages/products.html">Products</a></li>
-      <li><a class="navbar-link light" href="/pages/about.html">About</a></li>
       <li><a class="navbar-link light" href="/pages/contacts.html">Contacts</a></li>
     </ul>
   </nav>
@@ -22,20 +22,35 @@
   <main>
     <div id="wrapper">
       <header>
-        <h1>Contacts</h1>
+        <h1 class="contacts-title">Contacts</h1>
       </header>
       <section>
         <h2>Information</h2>
         <div>
-          <h3>Where you can find us</h3>
+          <h3 class="contacts-subtitle">Where you can find us</h3>
           <ul>
-            <li>here</li>
-            <li>here</li>
-            <li>here</li>
+            <li>
+              <h3>City</h3>
+              <p>Address</p>
+              <p>Phone Number</p>
+              <p>Email:</p>
+            </li>
+            <li>
+              <h3>City</h3>
+              <p>Address</p>
+              <p>Phone Number</p>
+              <p>Email:</p>
+            </li>
+            <li>
+              <h3>City</h3>
+              <p>Address</p>
+              <p>Phone Number</p>
+              <p>Email:</p>
+            </li>
           </ul>
         </div>
         <div>
-          <h3>Opening hours</h3>
+          <h3 class="contacts-subtitle">Opening hours</h3>
           <ul>
             <li>now</li>
             <li>tomorrow</li>
@@ -50,18 +65,20 @@
         </figure>
       </section>
     
-      <form>
-        <legend>Contact form</legend>
-        <label>Purpose of contact</label>
-        <input>
-        <label>Name and Lastname</label>
-        <input type="text" placeholder="Name Lastname" required>
-        <label>Email</label>
-        <input type="email" placeholder="Email" required>
-        <label>Phone number</label>
-        <input>
-        <label>Message text</label>
-        <textarea placeholder="Message text" required></textarea>
+      <form class="form-section">
+        <div class="form-card contacts-page border-radius">
+          <legend>Contact form</legend>
+          <label>Purpose of contact</label>
+          <input>
+          <label>Name and Lastname</label>
+          <input type="text" placeholder="Name Lastname" required>
+          <label>Email</label>
+          <input type="email" placeholder="Email" required>
+          <label>Phone number</label>
+          <input>
+          <label>Message text</label>
+          <textarea placeholder="Message text" required></textarea>
+        </div>
       </form>
     </div>
   </main>
