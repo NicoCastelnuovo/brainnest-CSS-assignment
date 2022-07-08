@@ -8,68 +8,69 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <header class="logo">
-      <div>Header Logo</div>
+  <nav class="navbar flex padding">
+    <header>
+      <a class="logo extra-bold med">Header Logo</a>
     </header>
-    <ul class="navbar-navigation">
-      <li class="navbar-link"><a>Header link one</a></li>
-      <li class="navbar-link"><a>Header link two</a></li>
-      <li class="navbar-link"><a>Header link three</a></li>
+    <ul class="flex">
+      <li><a class="navbar-link light" href="/pages/products.html">Products</a></li>
+      <li><a class="navbar-link light" href="/pages/about.html">About</a></li>
+      <li><a class="navbar-link light" href="/pages/contacts.html">Contacts</a></li>
     </ul>
   </nav>
+
   <main>
     <div id="wrapper">
 
-      <section class="hero-section">
+      <section class="hero-section flex light">
         <div>
           <header>
-            <h1 class="hero-title">This website is awesome</h1>
+            <h1 class="main-heading extra-bold big">This website is awesome</h1>
           </header>
           <p>
             This website has some subtext, little and with low contrast.
             Other place for text here, to make it bigger. Bye!
           </p>
-          <button class="button">Sign up</button>
+          <button class="border-radius">Sign up</button>
         </div>
         <figure class="hero-figure">
           <img class="hero-image">
         </figure>
       </section>
 
-      <section class="info-section">
+      <section class="info-section flex">
         <header>
-          <h2>Some random information.</h1>
+          <h2 class="info-heading extra-bold med-big">Some random information.</h2>
         </header>
-        <ul>
+        <ul class="flex lit">
           <li>
             <figure class="info-figure">
-              <img class="info-img">
+              <img class="info-img border-radius">
               <figcaption>This is a caption to understand the size</figcaption>
             </figure>
           </li>
           <li>
             <figure class="info-figure">
-              <img class="info-img">
+              <img class="info-img border-radius">
               <figcaption>This is a caption to understand the size</figcaption>
             </figure>
           </li>
           <li>
             <figure class="info-figure">
-              <img class="info-img">
+              <img class="info-img border-radius">
               <figcaption>This is a caption to understand the size</figcaption>
             </figure>
           </li>
           <li>
             <figure class="info-figure">
-              <img class="info-img">
+              <img class="info-img border-radius">
               <figcaption>This is a caption to understand the size</figcaption>
             </figure>
           </li>
         </ul>
       </section>
 
-      <section class="quote-section">
+      <section class="quote-section med-big">
         <figure>
           <blockquote>
             'The sky is bigger than you expect; I have to do a bigger quote 
@@ -83,13 +84,13 @@
         </figure>
       </section>
 
-      <section class="signup-section">
-        <div class="signup-block">
+      <section class="signup-section light lit">
+        <div class="signup-card flex border-radius">
           <div>
             <h3>Call to action! It's time!</h3>
             <p>Sign up for our product bla bla blac</p>
           </div>
-          <button class="button signup-button">Sign up</button>
+          <button class="button border border-radius">Sign up</button>
         </div>
       </section>
 

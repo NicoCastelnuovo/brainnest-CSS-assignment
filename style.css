@@ -52,6 +52,43 @@
 }
 
 
+/* Typography weight */
+.extra-bold {
+    font-family: 'RobotoExtraBold', sans-serif;
+}
+.bold {
+    font-family: 'RobotoBold', sans-serif;
+}
+.medium {
+    font-family: 'RobotoMedium', sans-serif;
+}
+.light {
+    font-family: 'RobotoLight', sans-serif;
+}
+.thin {
+    font-family: 'RobotoThin', sans-serif;
+}
+
+
+/* Typography size */ 
+.big {
+    font-size: 48px;
+}
+.med-big {
+    font-size: 36px;
+}
+.med {
+    font-size: 24px;
+}
+.lit-med {
+    font-size: 18px;
+}
+.lit {
+    font-size: 15px;
+}
+
+
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -65,27 +102,59 @@ body {
 section {
     padding: 0 15%;
 }
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    font-family: 'RobotoMedium', sans-serif;
+    font-size: 18px;
+    background-color: var(--blue);
+    color: var(--grey);
+    border: none;
+    padding: 6px 30px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+section p {
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 15px;
+}
+figure {
+    background-color: var(--grey);
+    flex: 1 1 400px;
+    width: 400px;
+    height: 200px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.border-radius {
+    border-radius: 9px;
+}
+.border {
+    border: 2px solid var(--grey);
+}
 
 
 /* Navbar */
 .navbar {
-    display: flex;
-    align-items: baseline;
     background-color: var(--dark-blue);
+    color: var(--grey);
+    align-items: baseline;
     padding: 12px 15%;
+}
+.navbar > header {
+    flex-grow: 1;
 }
 .logo {
     color: var(--white);
-    font-size: 24px;
-    font-family: 'RobotoExtraBold', sans-serif;
-    flex-grow: 1;
 }
-nav > ul {
-    list-style-type: none;
-    color: var(--grey);
-    display: flex;
-}
-a {
+.navbar .navbar-link {
+    color: var(--gray);
     margin: 0 12px;
 }
 
@@ -94,110 +163,67 @@ a {
 .hero-section {
     background-color: var(--dark-blue);
     color: var(--grey);
-    display: flex;
     gap: 24px;
-    font-family: 'RobotoLight', sans-serif;
     padding: 120px 15%;
 }
 .hero-section > div {
     flex: 1 1 400px;
 }
-.hero-title {
+.main-heading {
     color: var(--white);
-    font-size: 48px;
-    font-family: 'RobotoExtraBold', sans-serif;
-}
-.button {
-    background-color: var(--blue);
-    color: var(--grey);
-    font-size: 15px;
-    font-family: 'RobotoMedium', sans-serif;
-    border: none;
-    border-radius: 6px;
-    padding: 6px 30px;
-    margin: 12px 0;
-    cursor: pointer;
-}
-.hero-figure {
-    flex: 1 1 400px;
-    width: 400px;
-    height: 200px;
-    background-color: var(--grey);
 }
 
 
 /* Info section */
 .info-section {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 0 15% 120px 15%;
 }
-h2 {
-    font-family: 'RobotoExtraBold', sans-serif;
-    font-size: 36px;
+.info-heading {
     padding: 60px 0;
 }
-.info-section > ul {
-    list-style-type: none;
-    display: flex;
-}
-.info-figure {
-
-}
 .info-img {
-    width: 100px;
-    height: 100px;
     background-color: var(--grey);
     border: 2px solid var(--blue);
-    border-radius: 9px;;
-}
-.info-figure > figcaption {
-    font-size: 15px;
+    width: 100px;
+    height: 100px;
 }
 
 
 /* Quote */
 .quote-section {
-    background-color: var(--grey);
     font-family: 'RobotoLightItalic', sans-serif;
-    font-size: 33px;
+    background-color: var(--grey);
     padding: 120px 25%;
 }
 
 
-
-/* signup section */
+/* Signup section */
 .signup-section {
     color: var(--white);
-    font-family: 'RobotoRegular', sans-serif;
     padding: 90px 15%;
 }
-.signup-block {
-    display: flex;
+.signup-card {
     background-color: var(--blue);
-    flex-grow: 1;
-    border-radius: 9px;
     padding: 45px 90px;
 }
-.signup-block > div {
+.signup-card > div {
     flex-grow: 1;
 }
-section p {
-    font-family: 'RobotoLight', sans-serif;
-    font-size: 15px;
-}
-.signup-button {
-    border: 2px solid var(--grey);
-}
 
 
-/* footer */
+/* Footer */
 footer {
+    font-family: 'RobotoThin', sans-serif;
+    text-align: center;
     background-color: var(--dark-blue);
     color: var(--white);
     padding: 33px;
-    text-align: center;
-    font-family: 'RobotoThin', sans-serif;
+}
+
+
+/* CONSTACTS PAGE */
+form {
+
 }
