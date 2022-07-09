@@ -48,10 +48,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
-}
-section {
-    padding: 0 15%;
 }
 ul {
     list-style-type: none;
@@ -75,10 +71,10 @@ h3 {
     color: var(--white);
 }
 a {
+    text-decoration: none;
     font-family: 'RobotoLight', sans-serif;
     font-size: 18px;
     color: var(--grey);
-    text-decoration: none;
 }
 .normal-text {
     font-family: 'RobotoLight', sans-serif;
@@ -102,6 +98,15 @@ a {
 
 
 /* Shared components */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 .dark-section {
     background-color: var(--dark-blue);
     padding: 120px 15%;
@@ -109,9 +114,9 @@ a {
 }
 .white-section {
     align-items: center;
-    padding: 0 15% 90px 15%;
+    padding: 90px 15%;
 }
-.quote-section {
+.grey-section {
     font-family: 'RobotoLightItalic', sans-serif;
     font-size: 36px;
     background-color: var(--grey);
@@ -121,9 +126,9 @@ a {
     font-family: 'RobotoLight', sans-serif;
     font-size: 18px;
     color: var(--white);
-    margin: 3px 0;
     background-color: var(--blue);
     padding: 45px 90px;
+    border-radius: 6px;
 }
 .blue-button {
     font-family: 'RobotoMedium', sans-serif;
@@ -134,14 +139,15 @@ a {
     padding: 6px 30px;
     margin: 12px 0;
     cursor: pointer;
+    border-radius: 6px;
 }
-.flex-row {
-    display: flex;
-    flex-flow: row wrap;
+.blue-button:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    transition: 0.4s;
 }
-.flex-column {
-    display: flex;
-    flex-direction: column;
+.white-border {
+    border: 2px solid white;
 }
 
 
@@ -163,12 +169,12 @@ a {
 
 /* ------------------ HOME PAGE ------------------ */
 /* Hero section */
-.hero-section > div {
-    flex: 1 1 400px;
+.dark-section > div {
+    flex: 1 1 100px;
 }
 .hero-image {
     width: 400px;
-    flex: 1 1 400px;
+    flex: 1 1 300px;
 }
 
 /* Info section */
@@ -184,19 +190,17 @@ a {
 }
 .info-img {
     background-color: var(--grey);
-    border: 2px solid var(--blue);
+    border: 4px solid var(--blue);
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border-radius: 6px;
 }
 .info-card figcaption {
     text-align: center;
 }
 
 /* Signup section */
-.form-section {
-    padding: 90px 15%;
-}
 .form-card > div {
     flex-grow: 1;
 }
@@ -210,25 +214,43 @@ footer {
 
 
 /* ------------------ PRODUCTS PAGE ------------------ */
+.products {
+    flex-wrap: wrap;
+}
+.products-card {
+    background-color: var(--grey);
+}
+.products-card > figure {
+    flex-basis: 210px;
+}
+.products-image {
+    width: 210px;
+    height: 280px;
+    object-fit: cover;
+}
 
 
 /* ------------------ CONTACTS PAGE ------------------ */
 /* Locations */
-.white-section.contacts { /* revert the order of the classes is important or not? ???????????????????????? */
+.contacts.white-section {
     flex-wrap: wrap;
     padding: 90px 15% 0 15%;
 }
-.white-section.contacts h3 {
+.contacts.white-section h3 {
     color: var(--dark-blue);
     flex-basis: 100%;
     margin: 24px 0;
 }
-.white-section.locations h4 {
+.locations.white-section h4 {
     margin-bottom: 18px;
 }
-.white-section.locations ul {
+.locations.white-section ul {
     justify-content: space-between;
     flex-basis: 100%;
+    gap: 33px;
+}
+.locations.white-section li {
+    flex-basis: 290px;
 }
 .locations-card {
     background-color: var(--grey);
@@ -236,32 +258,33 @@ footer {
 }
 
 /* Openings */
-.white-section.openings {
+.openings.white-section {
     color: var(--dark-blue);
+    justify-content: flex-start;
 }
-.white-section.openings ul {
+.openings.white-section ul {
     list-style-type: circle;
     margin-left: 33px;
 }
 
 /* Form */
-.form-card.contacts h3 {
+.contacts.form-card h3 {
     margin-bottom: 12px;
 }
-.form-card.contacts > input, textarea {
+.contacts.form-card > input, textarea {
     font-family: 'RobotoLight', sans-serif;
     font-size: 18px;
     padding: 9px 15px;
-    border-radius: 3px;
+    border-radius: 6px;
     border: none;
 }
-.form-card.contacts input {
+.contacts.form-card input {
     margin-bottom: 12px;
 }
-.form-card.contacts textarea {
+.contacts.form-card textarea {
     height: 200px;
 }
-.form-card.contacts button {
+.contacts.form-card button {
     width: 50%;
     margin: 33px auto 0 auto;
 }
@@ -285,9 +308,13 @@ footer {
         flex-direction: column;
     }
     .white-section {
-
+        padding: 90px 0 0 0;
     }
-    
+    .form-card {
+        margin: 45px 0 0 0;
+        padding: 45px 33px;
+        border-radius: 0;
+    }
     /* Navbar */
     #wrapper {
         display: flex;

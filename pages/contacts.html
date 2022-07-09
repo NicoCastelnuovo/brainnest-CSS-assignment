@@ -21,17 +21,17 @@
 
   <main>
     <div id="wrapper">
-      <section class="dark-section flex-row normal-text grey-text">
-        <div>
-          <header>
-            <h1>Contacts</h1>
-          </header>
-          <p>Discover where we are  and <strong>join us</strong>,<br>
-            For any request don't hesitate to <strong>write us!</strong></p>       
-        </div>
+      <section class="dark-section normal-text grey-text">
+        <header>
+          <h1>Contacts</h1>
+        </header>
+        <p>
+          Discover where we are  and <strong><a href="#location">join us</a></strong>,<br>
+          For any request don't hesitate to <strong><a href="#form">write us!</a></strong>
+        </p>       
       </section>
 
-      <section class="white-section flex-row normal-text dark-blue-text contacts locations">
+      <section id="location" class="white-section flex-row normal-text dark-blue-text contacts locations">
         <h3>Where you can find us</h3>
         <ul class="flex-row">
           <li class="locations-card">
@@ -64,7 +64,7 @@
         </ul>
       </section>
     
-      <form class="form-section" action="">
+      <form id="form" class="white-section" action="">
         <div class="form-card flex-column contacts">
           <legend><h3>Contact form</h3></legend>
           <label for="reason">Purpose of contact</label>
@@ -75,7 +75,7 @@
           <input id="email" name="email" type="email" placeholder="Email" required>
           <label for="message">Message text</label>
           <textarea id="message" name="message" placeholder="Message text" required></textarea>
-          <button type="submit" class="blue-button border border-radius">Submit</button>
+          <button type="submit" class="blue-button white-border">Submit</button>
         </div>
       </form>
     </div>
