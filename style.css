@@ -37,7 +37,7 @@
 }
 
 
-/* General styles */
+/* General styles and rules */
 :root {
     --dark-blue: #1f2937;
     --blue: #3882f6;
@@ -58,7 +58,7 @@ ul {
 }
 
 
-/* Typography styles */
+/* Typography */
 h1 {
     font-family: 'RobotoExtraBold', sans-serif;
     color: var(--white);
@@ -86,7 +86,7 @@ a {
 }
 
 
-/* text-colors */
+/* Typography colors */
 .white-text {
     color: var(--white);
 }
@@ -103,14 +103,11 @@ a {
 
 /* Shared components */
 .dark-section {
-    display: flex;
     background-color: var(--dark-blue);
     padding: 120px 15%;
     gap: 24px;
 }
 .white-section {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 0 15% 90px 15%;
 }
@@ -125,7 +122,6 @@ a {
     font-size: 18px;
     color: var(--white);
     margin: 3px 0;
-    display: flex;
     background-color: var(--blue);
     padding: 45px 90px;
 }
@@ -139,29 +135,33 @@ a {
     margin: 12px 0;
     cursor: pointer;
 }
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
 
-/* Navbar style */
+/* Navbar */
 .navbar {
     background-color: var(--dark-blue);
-    display: flex;
     align-items: baseline;
     padding: 12px 15%;
     position: fixed;
     width: 100%;
 }
 .navbar > header {
-    flex-grow: 1;
+    flex: 1;
 }
-.navbar > ul {
-    display: flex;
-}
-.navbar-link {
-    margin: 0 12px;
+.navbar-list {
+    gap: 12px;
 }
 
 
-/* ------ HOME PAGE ------ */
+/* ------------------ HOME PAGE ------------------ */
 /* Hero section */
 .hero-section > div {
     flex: 1 1 400px;
@@ -176,7 +176,6 @@ a {
     padding: 42px 0;
 }
 .info-list {
-    display: flex;
     justify-content: center;
     gap: 39px;
 }
@@ -210,13 +209,12 @@ footer {
 }
 
 
-/* ------ PRODUCTS PAGE ------ */
+/* ------------------ PRODUCTS PAGE ------------------ */
 
 
-/* ------ CONTACTS PAGE ------ */
+/* ------------------ CONTACTS PAGE ------------------ */
 /* Locations */
-.white-section.contacts {
-    flex-direction: row;
+.white-section.contacts { /* revert the order of the classes is important or not? ???????????????????????? */
     flex-wrap: wrap;
     padding: 90px 15% 0 15%;
 }
@@ -229,7 +227,6 @@ footer {
     margin-bottom: 18px;
 }
 .white-section.locations ul {
-    display: flex;
     justify-content: space-between;
     flex-basis: 100%;
 }
@@ -248,9 +245,6 @@ footer {
 }
 
 /* Form */
-.form-card.contacts {
-    flex-direction: column;
-}
 .form-card.contacts h3 {
     margin-bottom: 12px;
 }
@@ -271,3 +265,47 @@ footer {
     width: 50%;
     margin: 33px auto 0 auto;
 }
+
+
+/* ------------------ MEDIA QUERIES ------------------ */
+/* ------Smartphone------ */
+/*
+@media screen and (min-width: 320px) {
+}
+*/
+/*
+@media screen and (min-width: 480px) {
+}
+*/
+
+/* ------iPads, tablets------ */
+@media screen and (max-width: 768px) {
+    /* Shared components */
+    .dark-section {
+        flex-direction: column;
+    }
+    .white-section {
+
+    }
+    
+    /* Navbar */
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar {
+        flex-wrap: wrap;
+    }
+}
+
+/* ------Large screens, desktop------ */
+/*
+@media screen and (min-width: 1024px) {
+} 
+*/
+
+/* ------Extra large screens, TV------ */
+/*
+@media screen and (min-width: 1200px) {
+} 
+*/

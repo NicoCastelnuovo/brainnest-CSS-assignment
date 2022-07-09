@@ -8,20 +8,20 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <nav class="navbar grey-text">
+  <nav class="navbar flex-row grey-text">
     <header>
       <h3>WowCool!</h3>
     </header>
-    <ul>
-      <li><a class="navbar-link" href="../index.html">Home</a></li>
-      <li><a class="navbar-link" href="./products.html">Products</a></li>
-      <li><a class="navbar-link" href="./contacts.html">Contacts</a></li>
+    <ul class="navbar-list flex-row">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./products.html">Products</a></li>
+      <li><a href="./contacts.html">Contacts</a></li>
     </ul>
   </nav>
 
   <main>
     <div id="wrapper">
-      <section class="dark-section normal-text grey-text">
+      <section class="dark-section flex-row normal-text grey-text">
         <div>
           <header>
             <h1>Contacts</h1>
@@ -31,9 +31,9 @@
         </div>
       </section>
 
-      <section class="white-section normal-text dark-blue-text contacts locations">
+      <section class="white-section flex-row normal-text dark-blue-text contacts locations">
         <h3>Where you can find us</h3>
-        <ul>
+        <ul class="flex-row">
           <li class="locations-card">
             <h4>New York City</h4>
             <p>Where is the street 78</p>
@@ -55,7 +55,7 @@
         </ul>
       </section>
       
-      <section class="white-section normal-text dark-blue-text contacts openings">
+      <section class="white-section flex-row normal-text dark-blue-text contacts openings">
         <h3>Opening hours</h3>
         <ul>
           <li>Monday - Wednesday - Friday: 8am - 20pm</li>
@@ -65,7 +65,7 @@
       </section>
     
       <form class="form-section" action="">
-        <div class="form-card contacts">
+        <div class="form-card flex-column contacts">
           <legend><h3>Contact form</h3></legend>
           <label for="reason">Purpose of contact</label>
           <input id="reason" name="reason" type="text" placeholder="Write here the main reason of your message">
