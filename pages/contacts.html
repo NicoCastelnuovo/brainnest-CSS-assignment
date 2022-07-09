@@ -8,82 +8,80 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <nav class="navbar flex padding">
+  <nav class="navbar grey-text">
     <header>
-      <a class="logo extra-bold med" href="../index.html">Header Logo</a>
+      <h3>WowCool!</h3>
     </header>
-    <ul class="flex">
-      <li><a class="navbar-link light" href="../index.html">Home</a></li>
-      <li><a class="navbar-link light" href="/pages/products.html">Products</a></li>
-      <li><a class="navbar-link light" href="/pages/contacts.html">Contacts</a></li>
+    <ul>
+      <li><a class="navbar-link" href="../index.html">Home</a></li>
+      <li><a class="navbar-link" href="./products.html">Products</a></li>
+      <li><a class="navbar-link" href="./contacts.html">Contacts</a></li>
     </ul>
   </nav>
 
   <main>
     <div id="wrapper">
-      <header>
-        <h1 class="contacts-title">Contacts</h1>
-      </header>
-      <section>
-        <h2>Information</h2>
+      <section class="dark-section normal-text grey-text">
         <div>
-          <h3 class="contacts-subtitle">Where you can find us</h3>
-          <ul>
-            <li>
-              <h3>City</h3>
-              <p>Address</p>
-              <p>Phone Number</p>
-              <p>Email:</p>
-            </li>
-            <li>
-              <h3>City</h3>
-              <p>Address</p>
-              <p>Phone Number</p>
-              <p>Email:</p>
-            </li>
-            <li>
-              <h3>City</h3>
-              <p>Address</p>
-              <p>Phone Number</p>
-              <p>Email:</p>
-            </li>
-          </ul>
+          <header>
+            <h1>Contacts</h1>
+          </header>
+          <p>Discover where we are  and <strong>join us</strong>,<br>
+            For any request don't hesitate to <strong>write us!</strong></p>       
         </div>
-        <div>
-          <h3 class="contacts-subtitle">Opening hours</h3>
-          <ul>
-            <li>now</li>
-            <li>tomorrow</li>
-            <li>never</li>
-          </ul>
-        </div>
-        <figure>
-          <img >
-          <figcaption>
-            
-          </figcaption>
-        </figure>
+      </section>
+
+      <section class="white-section normal-text dark-blue-text contacts locations">
+        <h3>Where you can find us</h3>
+        <ul>
+          <li class="locations-card">
+            <h4>New York City</h4>
+            <p>Where is the street 78</p>
+            <p>Phone Number: 555-890345</p>
+            <p>Email: wowcool.nyc@cool.com</p>
+          </li>
+          <li class="locations-card">
+            <h4>Washington</h4>
+            <p>I Don't Know Street 67</p>
+            <p>Phone Number: 555-123456</p>
+            <p>Email: wowcool.wash@cool.com</p>
+          </li>
+          <li class="locations-card">
+            <h4>Minneapolis</h4>
+            <p>Lorem Ipsum Street 5</p>
+            <p>Phone Number: 555-8903123</p>
+            <p>Email: wowcool.min@cool.com</p>
+          </li>
+        </ul>
+      </section>
+      
+      <section class="white-section normal-text dark-blue-text contacts openings">
+        <h3>Opening hours</h3>
+        <ul>
+          <li>Monday - Wednesday - Friday: 8am - 20pm</li>
+          <li>Tuesday - Thurdsday - Saturday: 8am - 13.30pm</li>
+          <li>Sunday: rest day</li>
+        </ul>
       </section>
     
-      <form class="form-section">
-        <div class="form-card contacts-page border-radius">
-          <legend>Contact form</legend>
-          <label>Purpose of contact</label>
-          <input>
-          <label>Name and Lastname</label>
-          <input type="text" placeholder="Name Lastname" required>
-          <label>Email</label>
-          <input type="email" placeholder="Email" required>
-          <label>Phone number</label>
-          <input>
-          <label>Message text</label>
-          <textarea placeholder="Message text" required></textarea>
+      <form class="form-section" action="">
+        <div class="form-card contacts">
+          <legend><h3>Contact form</h3></legend>
+          <label for="reason">Purpose of contact</label>
+          <input id="reason" name="reason" type="text" placeholder="Write here the main reason of your message">
+          <label for="name">Name and Lastname</label>
+          <input id="name" name="name" type="text" placeholder="Name Lastname" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email" required>
+          <label for="message">Message text</label>
+          <textarea id="message" name="message" placeholder="Message text" required></textarea>
+          <button type="submit" class="blue-button border border-radius">Submit</button>
         </div>
       </form>
     </div>
   </main>
-  <footer>
-      Copyright (R)
+  <footer class="normal-text white-text">
+    WebSite made by NicoCastel - Copyright &copy
   </footer>
 </body>
 </html>

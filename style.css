@@ -1,3 +1,4 @@
+/* Imported fonts */
 @font-face {
     font-family: 'RobotoThin';
     src: url(fonts/Roboto-Thin.ttf) format('truetype');
@@ -47,8 +48,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
+    /* outline: 1px solid red; */
 }
 section {
     padding: 0 15%;
@@ -56,32 +56,6 @@ section {
 ul {
     list-style-type: none;
 }
-button {
-    font-family: 'RobotoMedium', sans-serif;
-    font-size: 18px;
-    background-color: var(--blue);
-    color: var(--grey);
-    border: none;
-    padding: 6px 30px;
-    margin: 12px 0;
-    cursor: pointer;
-}
-/* .flex {
-    display: flex;
-}
-.row {
-    flex-direction: row;
-}
-.col {
-    flex-direction: column;
-} */
-.border-radius {
-    border-radius: 9px;
-}
-.border {
-    border: 2px solid var(--grey);
-}
-
 
 
 /* Typography styles */
@@ -106,25 +80,70 @@ a {
     color: var(--grey);
     text-decoration: none;
 }
-p, form {
+.normal-text {
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 18px;
+}
+
+
+/* text-colors */
+.white-text {
+    color: var(--white);
+}
+.grey-text {
+    color: var(--grey);
+}
+.blue-text {
+    color: var(--blue);
+}
+.dark-blue-text {
+    color: var(--dark-blue);
+}
+
+
+/* Shared components */
+.dark-section {
+    display: flex;
+    background-color: var(--dark-blue);
+    padding: 120px 15%;
+    gap: 24px;
+}
+.white-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15% 90px 15%;
+}
+.quote-section {
+    font-family: 'RobotoLightItalic', sans-serif;
+    font-size: 36px;
+    background-color: var(--grey);
+    padding: 120px 25%;
+}
+.form-card {
     font-family: 'RobotoLight', sans-serif;
     font-size: 18px;
     color: var(--white);
     margin: 3px 0;
+    display: flex;
+    background-color: var(--blue);
+    padding: 45px 90px;
 }
-figcaption {
-    font-family: 'RobotoLight', sans-serif;
+.blue-button {
+    font-family: 'RobotoMedium', sans-serif;
     font-size: 18px;
-    text-align: center;
-    color: var(--dark-blue);
-    margin: 3px 0;  
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 6px 30px;
+    margin: 12px 0;
+    cursor: pointer;
 }
 
 
-/* Navbar */
+/* Navbar style */
 .navbar {
     background-color: var(--dark-blue);
-    color: var(--grey);
     display: flex;
     align-items: baseline;
     padding: 12px 15%;
@@ -137,100 +156,118 @@ figcaption {
 .navbar > ul {
     display: flex;
 }
-.logo {
-    color: var(--white);
-}
-.navbar .navbar-link {
-    color: var(--gray);
+.navbar-link {
     margin: 0 12px;
 }
 
 
+/* ------ HOME PAGE ------ */
 /* Hero section */
-.hero-section {
-    display: flex;
-    background-color: var(--dark-blue);
-    color: var(--grey);
-    padding: 120px 15%;
-    gap: 24px;
-}
 .hero-section > div {
     flex: 1 1 400px;
-}
-.hero-heading {
-    color: var(--white);
 }
 .hero-image {
     width: 400px;
     flex: 1 1 400px;
 }
 
-
 /* Info section */
-.info-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 15% 120px 15%;
-}
 .info-heading {
     padding: 42px 0;
 }
 .info-list {
     display: flex;
-    gap: 36px;
+    justify-content: center;
+    gap: 39px;
 }
 .info-card {
-    width: 150px;
-    height: 150px;
+    flex-basis: 150px;
 }
 .info-img {
     background-color: var(--grey);
     border: 2px solid var(--blue);
     width: 150px;
     height: 150px;
+    object-fit: cover;
 }
-
-
-/* Quote */
-.quote-section {
-    font-family: 'RobotoLightItalic', sans-serif;
-    font-size: 36px;
-    background-color: var(--grey);
-    padding: 120px 25%;
+.info-card figcaption {
+    text-align: center;
 }
-
 
 /* Signup section */
 .form-section {
-    color: var(--white);
     padding: 90px 15%;
-}
-.form-card {
-    display: flex;
-    background-color: var(--blue);
-    padding: 45px 90px;
-
 }
 .form-card > div {
     flex-grow: 1;
 }
 
-
 /* Footer */
 footer {
-    font-family: 'RobotoThin', sans-serif;
-    text-align: center;
     background-color: var(--dark-blue);
-    color: var(--white);
+    text-align: center;
     padding: 33px;
 }
 
 
-/* CONTACTS PAGE */
-.contacts-page {
+/* ------ PRODUCTS PAGE ------ */
+
+
+/* ------ CONTACTS PAGE ------ */
+/* Locations */
+.white-section.contacts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 90px 15% 0 15%;
+}
+.white-section.contacts h3 {
+    color: var(--dark-blue);
+    flex-basis: 100%;
+    margin: 24px 0;
+}
+.white-section.locations h4 {
+    margin-bottom: 18px;
+}
+.white-section.locations ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+.locations-card {
+    background-color: var(--grey);
+    padding: 24px;
+}
+
+/* Openings */
+.white-section.openings {
+    color: var(--dark-blue);
+}
+.white-section.openings ul {
+    list-style-type: circle;
+    margin-left: 33px;
+}
+
+/* Form */
+.form-card.contacts {
     flex-direction: column;
 }
-.contacts-subtitle {
-    color: var(--dark-blue);
+.form-card.contacts h3 {
+    margin-bottom: 12px;
+}
+.form-card.contacts > input, textarea {
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 18px;
+    padding: 9px 15px;
+    border-radius: 3px;
+    border: none;
+}
+.form-card.contacts input {
+    margin-bottom: 12px;
+}
+.form-card.contacts textarea {
+    height: 200px;
+}
+.form-card.contacts button {
+    width: 50%;
+    margin: 33px auto 0 auto;
 }
