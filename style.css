@@ -167,39 +167,38 @@ input, textarea {
     position: fixed;
     width: 100%;
 }
-.navbar .logo {
+.navbar-logo {
     flex: 1;
 }
-.navbar .list {
+.navbar-list {
     gap: 12px;
 }
 
 
 /* ------------------ HOME PAGE ------------------ */
 /* Hero section */
-.hero.container {
+.hero .hero-container {
     flex: 1 1 300px;
 }
-img.hero {
+.hero .hero-image {
     width: 300px;
     height: auto;
     flex: 1 1 400px;
 }
 
 /* Info section */
-h2.info {
+.title.info {
     padding: 42px 0;
 }
-ul.info {
+.list.info {
     justify-content: center;
     gap: 39px;
 }
-li.info {
+.list-item.info {
     flex-basis: 150px;
     text-align: center;
 }
-img.info {
-    background-color: var(--grey);
+.info-image {
     border: 4px solid var(--blue);
     width: 150px;
     height: 150px;
@@ -209,53 +208,68 @@ img.info {
 
 
 /* Quote section */
-.quote.grey-section {
+.quote {
     font: 36px 'RobotoLightItalic', sans-serif;
+}
+.quote .caption {
+    font-size: 24px;
+    text-align: right;
+}
+.quote .cite {
+    font-family: 'RobotoRegular', sans-serif;
 }
 
 
 /* Signup section */
-.form .signup {
+.action {
     flex-grow: 1;
 }
 
 
 /* ------------------ PRODUCTS PAGE ------------------ */
-.products {
+.products.white-section {
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
 }
-.products-card {
-    background-color: var(--grey);
+.products.card {
+    width: 280px;
+    height: 480px;
+    padding: 16px;
 }
-.products-card > figure {
-    flex-basis: 210px;
+.products.card .first {
+    width: 100%;
+    height: 240px;
+    background-color: #3882f6;
 }
-.products-image {
-    width: 210px;
-    height: 280px;
-    object-fit: cover;
+.products.image {
+    width: 100%;
+    object-fit: scale-down;
+}
+.products.card .second {
+
 }
 
 
 /* ------------------ CONTACTS PAGE ------------------ */
 /* Locations */
-.white-section.contacts h3 {
+.title.contacts {
     flex-basis: 100%;
     margin: 24px 0;
     gap: 33px;
 }
-.white-section.contacts ul {
+.list.contacts {
     justify-content: space-between;
     flex-basis: 100%;
 }
-.grey-section.contacts {
+.list-item.contacts {
     padding: 24px;
     flex-basis: 290px;
 }
 
 
 /* Form */
-.form.contacts h3 {
+.form .title.contacts {
     margin-bottom: 12px;
 }
 .form.contacts input {
