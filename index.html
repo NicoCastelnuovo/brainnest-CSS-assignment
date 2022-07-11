@@ -8,99 +8,88 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar flex-row grey-text">
-    <header>
-      <h3>WowCool!</h3>
-    </header>
-    <ul class="navbar-list flex-row">
+  <nav class="navbar dark-section flex-row">
+    <h3 class="logo white-text">WowCool!</h3>
+    <ul class="list flex-row">
       <li><a href="./index.html">Home</a></li>
       <li><a href="./pages/products.html">Products</a></li>
       <li><a href="./pages/contacts.html">Contacts</a></li>
     </ul>
   </nav>
-
   <main>
-    <div id="wrapper">
+    <section class="dark-section flex-row">
+      <div class="hero container">
+        <h1 class="white-text"><strong>Comfort</strong><br>not only a dream</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempora 
+          ipsum distinctio voluptatum est illo atque ipsa soluta inventore incidunt 
+          minus ducimus, ullam ea et praesentium, consequuntur deserunt sunt commodi.
+        </p>
+        <a href="./pages/contacts.html#form">
+          <button class="blue-button">Sign up</button>
+        </a>
+      </div>
+      <figure>
+        <img class="hero" src="./images/hero-image.jpg" alt="A toilet with a blue wall">
+      </figure>
+    </section>
 
-      <section class="dark-section flex-row normal-text grey-text">
-        <div>
-          <header>
-            <h1><strong>Comfort</strong><br>not only a dream</h1>
-          </header>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempora 
-            ipsum distinctio voluptatum est illo atque ipsa soluta inventore incidunt 
-            minus ducimus, ullam ea et praesentium, consequuntur deserunt sunt commodi.
-          </p>
-          <a href="/pages/contacts.html">
-            <button class="blue-button">Sign up</button>
-          </a>
-        </div>
-        <figure>
-          <img class="hero-image" src="./images/hero-image.jpg" alt="A toilet with a blue wall">
-        </figure>
-      </section>
+    <section class="white-section flex-column">
+      <h2 class="info">Let's begin your travel</h2>
+      <ul class="info flex-row">
+        <li class="info">
+          <figure>
+            <img class="info" src="./images/hero-info-1.jpg" alt="White sink on a white wall">
+            <figcaption>Elegance in every corner and every hour</figcaption>
+          </figure>
+        </li>
+        <li class="info">
+          <figure>
+            <img class="info" src="./images/hero-info-2.jpg" alt="Pink toilet paper on a lightblue wall">
+            <figcaption>Endless comfort always with you</figcaption>
+          </figure>
+        </li>
+        <li class="info">
+          <figure>
+            <img class="info" src="./images/hero-info-3.jpg" alt="Zoomed and cleaned sink drain">
+            <figcaption>Save your time for what you love</figcaption>
+          </figure>
+        </li>
+        <li class="info">
+          <figure>
+            <img class="info" src="./images/hero-info-4.jpg" alt="Backview of a lightblue bidet">
+            <figcaption>Unbeatable futuristic technology</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-      <section class="white-section flex-column normal-text dark-blue-text">
-        <header>
-          <h2 class="info-heading">Let's begin your travel</h2>
-        </header>
-        <ul class="info-list flex-row">
-          <li class="info-card">
-            <figure>
-              <img class="info-img" src="./images/hero-info-1.jpg" alt="White sink on a white wall">
-              <figcaption class="info-caption">Elegance in every corner and every hour</figcaption>
-            </figure>
-          </li>
-          <li class="info-card">
-            <figure>
-              <img class="info-img" src="./images/hero-info-2.jpg" alt="Pink toilet paper on a lightblue wall">
-              <figcaption class="info-caption">Endless comfort always with you</figcaption>
-            </figure>
-          </li>
-          <li class="info-card">
-            <figure>
-              <img class="info-img" src="./images/hero-info-3.jpg" alt="Zoomed and cleaned sink drain">
-              <figcaption class="info-caption">Save your time for what you love</figcaption>
-            </figure>
-          </li>
-          <li class="info-card">
-            <figure>
-              <img class="info-img" src="./images/hero-info-4.jpg" alt="Backview of a lightblue bidet">
-              <figcaption class="info-caption">Unbeatable futuristic technology</figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
+    <section class="quote grey-section">
+      <figure>
+        <blockquote>
+          'When there are so many challenges and there is no solution, 
+          go to your toilet, put your heads down and you will surely get some solution.'
+        </blockquote>
+        <figcaption>
+          Anonymus, <cite>The lost books</cite>
+        </figcaption>
+      </figure>
+    </section>
 
-      <section class="grey-section">
-        <figure>
-          <blockquote>
-            'When there are so many challenges and there is no solution, 
-            go to your toilet, put your heads down and you will surely get some solution.'
-          </blockquote>
-          <figcaption>
-            Anonymus, <cite>The lost books</cite>
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="white-section">
-        <div class="form-card flex-row normal-text">
-          <div>
-            <h3>It's time to <del> get up </del> sit down and fight!</h3>
-            <p>Sign up for our product by clicking that button right over there</p>
-          </div>
-          <a href="/pages/contacts.html">
-            <button class="blue-button white-border">Sign up</button>
-          </a>
-        </div>
-      </section>
-
-    </div>
+    <section class="white-section">
+      <div class="form flex-row">
+        <p class="signup">
+          <strong>It's time to <del> get up </del> sit down and fight!</strong> <br>
+          Sign up for our product by clicking that button right over there
+        </p>
+        <a href="./pages/contacts.html#form">
+          <button class="blue-button white-border">Sign up</button>
+        </a>
+      </div>
+    </section>
   </main>
-  <footer class="normal-text white-text">
-    WebSite made by NicoCastel - Copyright &copy
+  <footer class="white-text">
+    <p>WebSite made by NicoCastel - Copyright &copy</p>
   </footer>
 </body>
 </html>

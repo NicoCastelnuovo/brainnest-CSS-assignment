@@ -8,79 +8,75 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <nav class="navbar flex-row grey-text">
-    <header>
-      <h3>WowCool!</h3>
-    </header>
-    <ul class="navbar-list flex-row">
+  <nav class="navbar dark-section flex-row">
+    <h3 class="logo white-text">WowCool!</h3>
+    <ul class="list flex-row">
       <li><a href="../index.html">Home</a></li>
       <li><a href="./products.html">Products</a></li>
       <li><a href="./contacts.html">Contacts</a></li>
     </ul>
   </nav>
-
   <main>
-    <div id="wrapper">
-      <section class="dark-section normal-text grey-text">
-        <header>
-          <h1>Contacts</h1>
-        </header>
-        <p>
-          Discover where we are  and <strong><a href="#location">join us</a></strong>,<br>
-          For any request don't hesitate to <strong><a href="#form">write us!</a></strong>
-        </p>       
-      </section>
+    <section class="dark-section">
+      <h1 class="white-text">Contacts</h1>
+      <p>
+        Discover where we are and <a href="#location"><strong>join us</strong></a>,<br>
+        For any request don't hesitate to <a href="#form"><strong>write us!</strong></a>
+      </p>       
+    </section>
 
-      <section id="location" class="white-section flex-row normal-text dark-blue-text contacts locations">
-        <h3>Where you can find us</h3>
-        <ul class="flex-row">
-          <li class="locations-card">
-            <h4>New York City</h4>
-            <p>Where is the street 78</p>
-            <p>Phone Number: 555-890345</p>
-            <p>Email: wowcool.nyc@cool.com</p>
-          </li>
-          <li class="locations-card">
-            <h4>Washington</h4>
-            <p>I Don't Know Street 67</p>
-            <p>Phone Number: 555-123456</p>
-            <p>Email: wowcool.wash@cool.com</p>
-          </li>
-          <li class="locations-card">
-            <h4>Minneapolis</h4>
-            <p>Lorem Ipsum Street 5</p>
-            <p>Phone Number: 555-8903123</p>
-            <p>Email: wowcool.min@cool.com</p>
-          </li>
-        </ul>
-      </section>
-      
-      <section class="white-section flex-row normal-text dark-blue-text contacts openings">
-        <h3>Opening hours</h3>
-        <ul>
-          <li>Monday - Wednesday - Friday: 8am - 20pm</li>
-          <li>Tuesday - Thurdsday - Saturday: 8am - 13.30pm</li>
-          <li>Sunday: rest day</li>
-        </ul>
-      </section>
-    
-      <form id="form" class="white-section" action="">
-        <div class="form-card flex-column contacts">
-          <legend><h3>Contact form</h3></legend>
-          <label for="reason">Purpose of contact</label>
-          <input id="reason" name="reason" type="text" placeholder="Write here the main reason of your message">
-          <label for="name">Name and Lastname</label>
-          <input id="name" name="name" type="text" placeholder="Name Lastname" required>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Email" required>
-          <label for="message">Message text</label>
-          <textarea id="message" name="message" placeholder="Message text" required></textarea>
-          <button type="submit" class="blue-button white-border">Submit</button>
-        </div>
+    <section id="location" class="white-section flex-row contacts">
+      <h3>Where you can find us</h3>
+      <ul class="flex-row">
+        <li class="grey-section contacts">
+          <h4>New York City</h4>
+          <ul>
+            <li>Where is the street 78</li>
+            <li>Phone Number: 555-890345</li>
+            <li>Email: wowcool.nyc@cool.com</li>
+          </ul>
+        </li>
+        <li class="grey-section contacts">
+          <h4>Washington</h4>
+          <ul>
+            <li>I Don't Know Street 67</li>
+            <li>Phone Number: 555-123456</li>
+            <li>Email: wowcool.wash@cool.com</li>
+          </ul>
+        </li>
+        <li class="grey-section contacts">
+          <h4>Minneapolis</h4>
+          <ul>
+            <li>Lorem Ipsum Street 5</li>
+            <li>Phone Number: 555-8903123</li>
+            <li>Email: wowcool.min@cool.com</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Opening hours</h3>
+      <ul>
+        <li>Monday - Wednesday - Friday: 8am - 20pm</li>
+        <li>Tuesday - Thurdsday - Saturday: 8am - 13.30pm</li>
+        <li>Sunday: rest day</li>
+      </ul>
+    </section>
+  
+    <section class="white-section" action="">
+      <form id="form" class="form flex-column contacts">
+        <legend><h3>Contact form</h3></legend>
+        <label for="reason">Purpose of contact</label>
+        <input id="reason" name="reason" type="text" placeholder="Write here the main reason of your message">
+        <label for="name">Name and Lastname</label>
+        <input id="name" name="name" type="text" placeholder="Name Lastname" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email" required>
+        <label for="message">Message text</label>
+        <textarea id="message" name="message" placeholder="Message text" required></textarea>
+        <button type="submit" class="blue-button white-border">Submit</button>
       </form>
-    </div>
+    </section>
   </main>
-  <footer class="normal-text white-text">
+  <footer class="white-text">
     WebSite made by NicoCastel - Copyright &copy
   </footer>
 </body>
