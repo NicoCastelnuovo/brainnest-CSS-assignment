@@ -85,6 +85,10 @@ a {
     color: var(--grey);
     text-decoration: none;
 }
+a:hover {
+    color: var(--blue);
+    transition: 0.4s;
+}
 input, textarea {
     padding: 9px 15px;
     border-radius: 6px;
@@ -92,6 +96,9 @@ input, textarea {
 }
 textarea {
     height: 200px;
+}
+figcaption {
+    text-align: center;
 }
 
 
@@ -119,6 +126,9 @@ textarea {
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+.gap-12 {
+    gap: 12px;
 }
 .gap-24 {
     gap: 24px;
@@ -174,6 +184,7 @@ textarea {
     align-items: baseline;
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 .navbar .logo {
     flex: 1;
@@ -196,7 +207,6 @@ textarea {
 }
 .list-item.info {
     flex-basis: 150px;
-    text-align: center;
 }
 .info-image {
     width: 150px;
@@ -204,6 +214,11 @@ textarea {
     object-fit: cover;
     border-radius: 6px;
     border: 4px solid var(--blue);
+}
+.info-image:hover {
+    width: 180px;
+    height: 180px;
+    transition: 0.4s;
 }
 /* Quote section */
 .quote {
@@ -217,14 +232,14 @@ textarea {
 .quote .cite {
     font-family: 'RobotoRegular', sans-serif;
 }
-/* Signup section */
+/* Action section */
 .action {
     flex-grow: 1;
 }
 
 
 /* ----------------------- PRODUCTS PAGE ----------------------- */
-.products.white-section {
+.white-section.products {
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -233,41 +248,40 @@ textarea {
     border-radius: 9px;
     padding: 0;
 }
+.products.card:hover {
+    box-shadow: 6px 6px 1px var(--blue);
+    transform: translate(-6px, -6px);
+    transition: 0.4s;
+}
 .image-box {
     width: 100%;
 }
-.image-box > img {
+.products-image {
     border-radius: 9px 9px 0 0;
     width: 100%;
     height: 240px;
     object-fit: cover;
 }
 .description-box {
+    align-items: center;
     padding: 16px;
 }
 
 
 /* ----------------------- CONTACTS PAGE ----------------------- */
-/* Locations */
-.title.contacts {
-    flex-basis: 100%;
-    margin: 24px 0;
+/* Locations and openings */
+.white-section.contacts {
+    align-items: flex-start;
 }
 .list.contacts {
     justify-content: space-between;
-    flex-basis: 100%;
 }
 .list-item.contacts {
     padding: 24px;
     flex-basis: 290px;
 }
-
-
 /* Form */
-.blue-card.contacts {
-    gap: 12px;
-}
-.blue-card.contacts button {
+.blue-button.white-border.contacts {
     width: 50%;
     margin: 33px auto 0 auto;
 }
@@ -290,23 +304,29 @@ textarea {
     .dark-section {
         flex-direction: column;
     }
-    .white-section {
-        padding: 0;
-    }
     .grey-section {
-        font-size: 24px;
+        padding: 120px 10%;
     }
-    .form {
-        padding: 45px 33px;
+    .blue-card {
+        padding: 45px 10%;
         border-radius: 0;
     }
     /* Navbar */
     .navbar {
         flex-wrap: wrap;
     }
+    /* ----------------------- HOME PAGE ----------------------- */
     /* Hero section */
     .hero-image {
         width: 100%;
+    }
+    /* Quote section */
+    .quote {
+        font-size: 21px;
+    }
+    /* ----------------------- CONTACTS PAGE ----------------------- */
+    .white-section.no-padding-smart-screen {
+        padding: 0;
     }
 }
 

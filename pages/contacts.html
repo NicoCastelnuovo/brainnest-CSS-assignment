@@ -10,7 +10,7 @@
 <body>
   <nav class="navbar dark-section flex-row">
     <h3 class="logo white-text">WowCool!</h3>
-    <ul class="list flex-row gap-33">
+    <ul class="list flex-row gap-12">
       <li><a href="../index.html">Home</a></li>
       <li><a href="./products.html">Products</a></li>
       <li><a href="./contacts.html">Contacts</a></li>
@@ -25,10 +25,10 @@
       </p>       
     </section>
 
-    <section id="location" class="white-section flex-row">
-      <h3 class="contacts title">Where you can find us</h3>
-      <ul class="contacts list flex-row">
-        <li class="contacts list-item grey-section">
+    <section id="location" class="white-section flex-column gap-33 contacts">
+      <h3>Where you can find us</h3>
+      <ul class="list flex-row contacts gap-33">
+        <li class="list-item grey-section contacts">
           <h4>New York City</h4>
           <ul>
             <li>Where is the street 78</li>
@@ -36,7 +36,7 @@
             <li>Email: wowcool.nyc@cool.com</li>
           </ul>
         </li>
-        <li class="contacts list-item grey-section">
+        <li class="list-item grey-section contacts">
           <h4>Washington</h4>
           <ul>
             <li>I Don't Know Street 67</li>
@@ -44,7 +44,7 @@
             <li>Email: wowcool.wash@cool.com</li>
           </ul>
         </li>
-        <li class="contacts list-item grey-section">
+        <li class="list-item grey-section contacts">
           <h4>Minneapolis</h4>
           <ul>
             <li>Lorem Ipsum Street 5</li>
@@ -53,7 +53,7 @@
           </ul>
         </li>
       </ul>
-      <h3 class="contacts title">Opening hours</h3>
+      <h3>Opening hours</h3>
       <ul>
         <li>Monday - Wednesday - Friday: 8am - 20pm</li>
         <li>Tuesday - Thurdsday - Saturday: 8am - 13.30pm</li>
@@ -61,8 +61,8 @@
       </ul>
     </section>
   
-    <section class="white-section" action="">
-      <form id="form" class="blue-card contacts flex-column">
+    <section class="white-section contacts no-padding-smart-screen" action="">
+      <form id="form" class="blue-card flex-column contacts gap-12">
         <legend><h3>Contact form</h3></legend>
         <label for="reason">Purpose of contact</label>
         <input id="reason" name="reason" type="text" placeholder="Write here the main reason of your message">
@@ -72,9 +72,10 @@
         <input id="email" name="email" type="email" placeholder="Email" required>
         <label for="message">Message text</label>
         <textarea id="message" name="message" placeholder="Message text" required></textarea>
-        <button type="submit" class="blue-button white-border">Submit</button>
+        <button type="submit" class="blue-button white-border contacts">Submit</button>
       </form>
     </section>
+
   </main>
   <footer class="white-text">
     WebSite made by NicoCastel - Copyright &copy
