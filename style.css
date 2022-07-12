@@ -178,7 +178,7 @@ figcaption {
 }
 
 
-/* Navbar */
+/* Navbar & logo */
 .navbar {
     padding: 12px 15%;
     align-items: baseline;
@@ -187,7 +187,8 @@ figcaption {
     z-index: 99;
 }
 .navbar .logo {
-    flex: 1;
+    flex-grow: 1;
+    flex-basis: 120px;
 }
 
 
@@ -288,22 +289,17 @@ figcaption {
 
 
 /* ----------------------- MEDIA QUERIES ----------------------- */
-/* ------Smartphone------ */
-/*
 @media screen and (min-width: 320px) {
 }
 */
-/*
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 494px) {
+    /* Navbar */
+    .navbar .logo {
+        text-align: center;
+    }
 }
-*/
-
-/* ------iPads, tablets------ */
 @media screen and (max-width: 768px) {
     /* Shared components */
-    .dark-section {
-        flex-direction: column;
-    }
     .grey-section {
         padding: 120px 10%;
     }
@@ -313,7 +309,11 @@ figcaption {
     }
     /* Navbar */
     .navbar {
-        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar .list {
+        flex-grow: 1;
+        justify-content: space-between;
     }
     /* ----------------------- HOME PAGE ----------------------- */
     /* Hero section */
@@ -329,14 +329,10 @@ figcaption {
         padding: 0;
     }
 }
-
-/* ------Large screens, desktop------ */
 /*
 @media screen and (min-width: 1024px) {
 } 
 */
-
-/* ------Extra large screens, TV------ */
 /*
 @media screen and (min-width: 1200px) {
 } 
