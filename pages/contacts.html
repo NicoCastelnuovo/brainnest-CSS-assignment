@@ -10,7 +10,7 @@
 <body>
   <nav class="navbar dark-section flex-row">
     <h3 class="logo white-text">WowCool!</h3>
-    <ul class="list flex-row gap-12">
+    <ul class="navbar-list flex-row gap-12">
       <li><a href="../index.html">Home</a></li>
       <li><a href="./products.html">Products</a></li>
       <li><a href="./contacts.html">Contacts</a></li>
@@ -27,8 +27,8 @@
 
     <section id="location" class="white-section flex-column gap-33 contacts">
       <h3>Our stores</h3>
-      <ul class="list flex-row contacts gap-33">
-        <li class="list-item grey-section contacts">
+      <ul class="flex-row gap-33 location">
+        <li class="grey-section location">
           <h4>New York City</h4>
           <ul>
             <li>Where is the street 78</li>
@@ -36,7 +36,7 @@
             <li>Email: wowcool.nyc@cool.com</li>
           </ul>
         </li>
-        <li class="list-item grey-section contacts">
+        <li class="grey-section location">
           <h4>Washington</h4>
           <ul>
             <li>I Don't Know Street 67</li>
@@ -44,7 +44,7 @@
             <li>Email: wowcool.wash@cool.com</li>
           </ul>
         </li>
-        <li class="list-item grey-section contacts">
+        <li class="grey-section location">
           <h4>Minneapolis</h4>
           <ul>
             <li>Lorem Ipsum Street 5</li>
@@ -54,18 +54,18 @@
         </li>
       </ul>
       <h3>Opening hours</h3>
-      <ul class="list openings">
+      <ul class="openings">
         <li>Monday - Wednesday - Friday: 8am - 20pm</li>
         <li>Tuesday - Thurdsday - Saturday: 8am - 13.30pm</li>
         <li>Sunday: rest day</li>
       </ul>
     </section>
   
-    <section class="white-section contacts no-padding-smart-screen" action="">
-      <form id="form" class="blue-card flex-column contacts gap-12">
+    <section class="white-section contacts no-padding-smart-screen" action="#">
+      <form id="form" class="blue-card flex-column gap-12 contacts">
         <legend><h3>Contact form</h3></legend>
         <label for="reason">Purpose of contact</label>
-        <input id="reason" name="reason" type="text" placeholder="Write here the main reason of your message">
+        <input id="reason" name="reason" type="text" placeholder="Write here the main reason of your message" required>
         <label for="name">Name and Lastname</label>
         <input id="name" name="name" type="text" placeholder="Name Lastname" required>
         <label for="email">Email</label>
@@ -75,10 +75,7 @@
         <button type="submit" class="blue-button white-border contacts">Submit</button>
       </form>
     </section>
-
   </main>
-  <footer class="white-text">
-    WebSite made by NicoCastel - Copyright &copy
-  </footer>
+  <footer>WebSite made by NicoCastel - Copyright &copy</footer>
 </body>
 </html>
