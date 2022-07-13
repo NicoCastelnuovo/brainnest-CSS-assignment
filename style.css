@@ -26,11 +26,6 @@
     font-weight: 500;
 }
 @font-face {
-    font-family: 'RobotoBold';
-    src: url(fonts/Roboto-Bold.ttf) format('truetype');
-    font-weight: 700;
-}
-@font-face {
     font-family: 'RobotoExtraBold';
     src: url(fonts/Roboto-Black.ttf) format('truetype');
     font-weight: 900;
@@ -50,7 +45,7 @@
     box-sizing: border-box;
 }
 html {
-    font: 18px 'RobotoRegular', sans-serif;
+    font: 18px 'RobotoLight', Verdana, sans-serif;
     color: var(--white);
     background-color: var(--dark-blue);
     scroll-behavior: smooth;
@@ -60,7 +55,7 @@ main {
     flex-direction: column;
 }
 footer {
-    font-family: 'RobotoThin', sans-serif;
+    font-family: 'RobotoThin', Verdana, sans-serif;
     text-align: center;
     padding: 33px;
 }
@@ -68,17 +63,20 @@ ul {
     list-style: none;
 }
 /* Typography */
+h1, h2, h3 {
+    font-family: 'RobotoExtraBold', Verdana, sans-serif;
+}
 h1 {
-    font: 2.6em 'RobotoExtraBold', sans-serif; /* 48px */
+    font-size: 2.6667em; /* 48px */
 }
 h2 {
-    font: 2em 'RobotoExtraBold', sans-serif; /* 36px */
+    font-size: 2em; /* 36px */
 }
 h3 {
-    font: 1.3em 'RobotoBold', sans-serif; /* 24px */
+    font-size: 1.3333em; /* 24px */
 }
 a, p, li, input, textarea, form, figcaption {
-    font: 1em 'RobotoLight', sans-serif;
+    font: 1em 'RobotoLight', Verdana, sans-serif;
 }
 a {
     color: var(--grey);
@@ -156,7 +154,7 @@ figcaption {
     border-radius: 9px;
 }
 .blue-button {
-    font-family: 'RobotoMedium', sans-serif;
+    font-family: 'RobotoMedium', Verdana, sans-serif;
     font-size: 1em;
     color: var(--white);
     background-color: var(--blue);
@@ -195,9 +193,13 @@ figcaption {
 }
 .image.hero {
     width: 350px;
+    height: auto;
     align-self: flex-start;
 }
 /* Info section */
+.white-section.info {
+    text-align: center;
+}
 .list.info {
     justify-content: center;
 }
@@ -218,7 +220,7 @@ figcaption {
 }
 /* Quote section */
 .grey-section.home-quote {
-    font: 2em 'RobotoLightItalic', sans-serif;
+    font: 2em 'RobotoLightItalic', Verdana, sans-serif;
     text-align: justify;
 }
 figcaption.home-quote {
@@ -226,7 +228,7 @@ figcaption.home-quote {
     text-align: right;
 }
 cite.home-quote {
-    font-family: 'RobotoRegular', sans-serif;
+    font-family: 'RobotoRegular', Verdana, sans-serif;
 }
 /* Call-to-action section */
 p.call-to-action {
