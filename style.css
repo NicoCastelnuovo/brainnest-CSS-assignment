@@ -1,4 +1,4 @@
-/* ----------------------- Imported fonts ----------------------- */
+/* ----------------------- IMPORTED FONTS ----------------------- */
 @font-face {
     font-family: 'RobotoThin';
     src: url(fonts/Roboto-Thin.ttf) format('truetype');
@@ -37,7 +37,7 @@
 }
 
 
-/* ----------------------- General styles and rules ----------------------- */
+/* ----------------------- DEFAULT STYLES ----------------------- */
 :root {
     --dark-blue: #1f2937;
     --blue: #3882f6;
@@ -49,7 +49,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body, main, footer {
+html {
     font: 18px 'RobotoRegular', sans-serif;
     color: var(--white);
     background-color: var(--dark-blue);
@@ -60,7 +60,7 @@ main {
     flex-direction: column;
 }
 footer {
-    font: 18px 'RobotoThin', sans-serif;
+    font-family: 'RobotoThin', sans-serif;
     text-align: center;
     padding: 33px;
 }
@@ -69,16 +69,16 @@ ul {
 }
 /* Typography */
 h1 {
-    font: 48px 'RobotoExtraBold', sans-serif;
+    font: 2.6em 'RobotoExtraBold', sans-serif; /* 48px */
 }
 h2 {
-    font: 36px 'RobotoExtraBold', sans-serif;
+    font: 2em 'RobotoExtraBold', sans-serif; /* 36px */
 }
 h3 {
-    font: 24px 'RobotoBold', sans-serif;
+    font: 1.3em 'RobotoBold', sans-serif; /* 24px */
 }
 a, p, li, input, textarea, form, figcaption {
-    font: 18px 'RobotoLight', sans-serif;
+    font: 1em 'RobotoLight', sans-serif;
 }
 a {
     color: var(--grey);
@@ -114,7 +114,7 @@ figcaption {
 }
 
 
-/* ----------------------- Shared components ----------------------- */
+/* ----------------------- SHARED COMPONENTS / COMMON PATTERN ----------------------- */
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -153,22 +153,23 @@ figcaption {
     color: var(--white);
     background-color: var(--blue);
     padding: 45px 10%;
-    border-radius: 6px;
+    border-radius: 9px;
 }
 .blue-button {
     font-family: 'RobotoMedium', sans-serif;
-    font-size: 18px;
+    font-size: 1em;
     color: var(--white);
     background-color: var(--blue);
-    width: 125px;
+    width: 7em; /* 125px */
     padding: 9px 30px;
     border-radius: 9px;
     border: none;
+    transition: 0.4s;
+    text-align: center;
 }
 .blue-button:hover {
     color: var(--blue);
     background-color: var(--white);
-    transition: 0.4s;
 }
 .white-border {
     border: 2px solid white;
@@ -189,12 +190,11 @@ figcaption {
 
 /* ----------------------- HOME PAGE ----------------------- */
 /* Hero section */
-.box.hero {
-    flex: 1 1 300px;
+.hero {
+    flex: 1 1 350px;
 }
 .image.hero {
-    width: 300px;
-    flex: 1 1 auto;
+    width: 350px;
     align-self: flex-start;
 }
 /* Info section */
@@ -205,24 +205,24 @@ figcaption {
     flex-basis: 150px;
 }
 .image.info {
-    width: 180px;
-    height: 180px;
+    width: 10em;
+    height: 10em;
     object-fit: cover;
     border-radius: 15px;
     border: 4px solid var(--blue);
 }
 .image.info:hover {
-    width: 190px;
-    height: 190px;
+    width: 10.5em;
+    height: 10.5em;
     transition: 0.4s;
 }
 /* Quote section */
 .grey-section.home-quote {
-    font: 36px 'RobotoLightItalic', sans-serif;
+    font: 2em 'RobotoLightItalic', sans-serif;
     text-align: justify;
 }
 figcaption.home-quote {
-    font-size: 24px;
+    font-size: 0.7em;
     text-align: right;
 }
 cite.home-quote {
@@ -239,7 +239,7 @@ p.call-to-action {
     justify-content: space-between;
 }
 .grey-section.products {
-    width: 280px;
+    width: 15.5em;
     border-radius: 9px;
     padding: 0;
 }
@@ -249,7 +249,7 @@ p.call-to-action {
     border-radius: 9px 9px 0 0;
 }
 .image.products {
-    height: 240px;
+    height: 15em;
     object-fit: cover;
     width: 100%;
     border-radius: 9px 9px 0 0;
@@ -302,7 +302,7 @@ p.call-to-action {
     .logo {
         text-align: center;
     }
-    /* ----------------------- CONTACTS PAGE ----------------------- */
+    /* Contacts page */
     .white-section.contacts {
         align-items: center;
     }
@@ -331,13 +331,17 @@ p.call-to-action {
         flex-grow: 1;
         justify-content: space-between;
     }
-    /* ----------------------- HOME PAGE ----------------------- */
-    /* Hero section */
+    /* Home page - Hero section */
     .image.hero {
         width: 100%;
     }
-    /* Quote section */
+    /* Home page - Quote section */
     .grey-section.home-quote {
-        font-size: 21px;
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 42px;
     }
 }
